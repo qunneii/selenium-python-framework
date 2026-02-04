@@ -1,0 +1,78 @@
+2026-01-18 20:31:08 - TestAutomation - [INFO] - log_config.py:40 - ================================================================================
+2026-01-18 20:31:08 - TestAutomation - [INFO] - log_config.py:41 - Logger initialized successfully
+2026-01-18 20:31:08 - TestAutomation - [INFO] - log_config.py:42 - Log file: logs/test_execution_20260118_203108.log
+2026-01-18 20:31:08 - TestAutomation - [INFO] - log_config.py:43 - ================================================================================
+2026-01-18 20:31:08 - TestAutomation - [INFO] - conftest.py:21 - ================================================================================
+2026-01-18 20:31:08 - TestAutomation - [INFO] - conftest.py:22 - SETUP CLASS: Initializing test class
+2026-01-18 20:31:08 - TestAutomation - [INFO] - conftest.py:23 - Test Class: TestAmazonWebsite
+2026-01-18 20:31:08 - TestAutomation - [INFO] - conftest.py:24 - ================================================================================
+2026-01-18 20:31:08 - TestAutomation - [INFO] - conftest.py:41 - --------------------------------------------------------------------------------
+2026-01-18 20:31:08 - TestAutomation - [INFO] - conftest.py:42 - SETUP METHOD: test_amazon_homepage_loads
+2026-01-18 20:31:08 - TestAutomation - [INFO] - conftest.py:43 - --------------------------------------------------------------------------------
+2026-01-18 20:31:08 - TestAutomation - [INFO] - conftest.py:46 - Initializing Chrome WebDriver...
+2026-01-18 20:31:10 - TestAutomation - [INFO] - conftest.py:56 - WebDriver initialized successfully
+2026-01-18 20:31:10 - TestAutomation - [INFO] - test_amazon.py:27 - TEST STARTED: test_amazon_homepage_loads
+2026-01-18 20:31:10 - TestAutomation - [INFO] - test_amazon.py:32 - Navigating to https://www.amazon.com
+2026-01-18 20:31:17 - TestAutomation - [INFO] - test_amazon.py:41 - Page title: Amazon.com. Spend less. Smile more.
+2026-01-18 20:31:17 - TestAutomation - [INFO] - test_amazon.py:48 - Amazon logo is displayed
+2026-01-18 20:31:17 - TestAutomation - [INFO] - test_amazon.py:51 - TEST PASSED: test_amazon_homepage_loads
+2026-01-18 20:31:17 - TestAutomation - [INFO] - conftest.py:72 - --------------------------------------------------------------------------------
+2026-01-18 20:31:17 - TestAutomation - [INFO] - conftest.py:73 - TEARDOWN METHOD: test_amazon_homepage_loads
+2026-01-18 20:31:17 - TestAutomation - [INFO] - conftest.py:88 - WebDriver closed
+2026-01-18 20:31:17 - TestAutomation - [INFO] - conftest.py:89 - --------------------------------------------------------------------------------
+2026-01-18 20:31:17 - TestAutomation - [INFO] - conftest.py:41 - --------------------------------------------------------------------------------
+2026-01-18 20:31:17 - TestAutomation - [INFO] - conftest.py:42 - SETUP METHOD: test_search_functionality
+2026-01-18 20:31:17 - TestAutomation - [INFO] - conftest.py:43 - --------------------------------------------------------------------------------
+2026-01-18 20:31:17 - TestAutomation - [INFO] - conftest.py:46 - Initializing Chrome WebDriver...
+2026-01-18 20:31:19 - TestAutomation - [INFO] - conftest.py:56 - WebDriver initialized successfully
+2026-01-18 20:31:19 - TestAutomation - [INFO] - test_amazon.py:74 - TEST STARTED: test_search_functionality
+2026-01-18 20:31:19 - TestAutomation - [INFO] - test_amazon.py:79 - Navigating to https://www.amazon.com
+2026-01-18 20:31:29 - TestAutomation - [INFO] - test_amazon.py:86 - Search box found
+2026-01-18 20:31:29 - TestAutomation - [INFO] - test_amazon.py:93 - Entered search query: laptop
+2026-01-18 20:31:34 - TestAutomation - [INFO] - test_amazon.py:99 - Search button clicked
+2026-01-18 20:31:36 - TestAutomation - [INFO] - test_amazon.py:109 - Found 22 search results
+2026-01-18 20:31:36 - TestAutomation - [INFO] - test_amazon.py:114 - Search term found in page source
+2026-01-18 20:31:36 - TestAutomation - [INFO] - test_amazon.py:117 - TEST PASSED: test_search_functionality
+2026-01-18 20:31:36 - TestAutomation - [INFO] - conftest.py:72 - --------------------------------------------------------------------------------
+2026-01-18 20:31:36 - TestAutomation - [INFO] - conftest.py:73 - TEARDOWN METHOD: test_search_functionality
+2026-01-18 20:31:36 - TestAutomation - [INFO] - conftest.py:88 - WebDriver closed
+2026-01-18 20:31:36 - TestAutomation - [INFO] - conftest.py:89 - --------------------------------------------------------------------------------
+2026-01-18 20:31:36 - TestAutomation - [INFO] - conftest.py:41 - --------------------------------------------------------------------------------
+2026-01-18 20:31:36 - TestAutomation - [INFO] - conftest.py:42 - SETUP METHOD: test_navigation_menu
+2026-01-18 20:31:36 - TestAutomation - [INFO] - conftest.py:43 - --------------------------------------------------------------------------------
+2026-01-18 20:31:36 - TestAutomation - [INFO] - conftest.py:46 - Initializing Chrome WebDriver...
+2026-01-18 20:31:38 - TestAutomation - [INFO] - conftest.py:56 - WebDriver initialized successfully
+2026-01-18 20:31:38 - TestAutomation - [INFO] - test_amazon.py:135 - TEST STARTED: test_navigation_menu
+2026-01-18 20:31:45 - TestAutomation - [INFO] - test_amazon.py:146 - Navigation bar found
+2026-01-18 20:31:45 - TestAutomation - [INFO] - test_amazon.py:152 - Menu button is visible
+2026-01-18 20:31:45 - TestAutomation - [INFO] - test_amazon.py:155 - TEST PASSED: test_navigation_menu
+2026-01-18 20:31:45 - TestAutomation - [INFO] - conftest.py:72 - --------------------------------------------------------------------------------
+2026-01-18 20:31:45 - TestAutomation - [INFO] - conftest.py:73 - TEARDOWN METHOD: test_navigation_menu
+2026-01-18 20:31:45 - TestAutomation - [INFO] - conftest.py:88 - WebDriver closed
+2026-01-18 20:31:45 - TestAutomation - [INFO] - conftest.py:89 - --------------------------------------------------------------------------------
+2026-01-18 20:31:45 - TestAutomation - [INFO] - conftest.py:41 - --------------------------------------------------------------------------------
+2026-01-18 20:31:45 - TestAutomation - [INFO] - conftest.py:42 - SETUP METHOD: test_intentional_failure_demo
+2026-01-18 20:31:45 - TestAutomation - [INFO] - conftest.py:43 - --------------------------------------------------------------------------------
+2026-01-18 20:31:45 - TestAutomation - [INFO] - conftest.py:46 - Initializing Chrome WebDriver...
+2026-01-18 20:31:46 - TestAutomation - [INFO] - conftest.py:56 - WebDriver initialized successfully
+2026-01-18 20:31:46 - TestAutomation - [INFO] - test_amazon.py:173 - TEST STARTED: test_intentional_failure_demo
+2026-01-18 20:31:55 - TestAutomation - [INFO] - test_amazon.py:185 - Page fully loaded
+2026-01-18 20:31:55 - TestAutomation - [WARNING] - test_amazon.py:189 - Attempting intentional assertion failure...
+2026-01-18 20:31:55 - TestAutomation - [ERROR] - test_amazon.py:194 - TEST FAILED (Expected): Expected eBay in title (intentional failure)
+assert 'eBay' in 'Amazon.com. Spend less. Smile more.'
+ +  where 'Amazon.com. Spend less. Smile more.' = <selenium.webdriver.chrome.webdriver.WebDriver (session="fc8156e0a6b878b796ddd32d815e8849")>.title
+ +    where <selenium.webdriver.chrome.webdriver.WebDriver (session="fc8156e0a6b878b796ddd32d815e8849")> = <test_amazon.TestAmazonWebsite object at 0x1067fb100>.driver
+2026-01-18 20:31:55 - TestAutomation - [INFO] - conftest.py:72 - --------------------------------------------------------------------------------
+2026-01-18 20:31:55 - TestAutomation - [INFO] - conftest.py:73 - TEARDOWN METHOD: test_intentional_failure_demo
+2026-01-18 20:31:55 - TestAutomation - [ERROR] - conftest.py:78 - Test FAILED - Capturing screenshot...
+2026-01-18 20:31:56 - TestAutomation - [ERROR] - conftest.py:83 - Screenshot saved: screenshots/FAILED_test_intentional_failure_demo_20260118_203156.png
+2026-01-18 20:31:56 - TestAutomation - [INFO] - conftest.py:88 - WebDriver closed
+2026-01-18 20:31:56 - TestAutomation - [INFO] - conftest.py:89 - --------------------------------------------------------------------------------
+2026-01-18 20:31:56 - TestAutomation - [INFO] - conftest.py:28 - ================================================================================
+2026-01-18 20:31:56 - TestAutomation - [INFO] - conftest.py:29 - TEARDOWN CLASS: Cleaning up test class
+2026-01-18 20:31:56 - TestAutomation - [INFO] - conftest.py:30 - ================================================================================
+2026-01-18 20:31:56 - TestAutomation - [INFO] - conftest.py:105 - ================================================================================
+2026-01-18 20:31:56 - TestAutomation - [INFO] - conftest.py:106 - TEST SUITE COMPLETED
+2026-01-18 20:31:56 - TestAutomation - [INFO] - conftest.py:107 - ================================================================================
+2026-01-18 20:31:56 - TestAutomation - [INFO] - conftest.py:111 - Extent Report generated: reports/Selenium_Test_Execution_Report_20260118_203156.html
+2026-01-18 20:31:56 - TestAutomation - [INFO] - conftest.py:112 - ================================================================================

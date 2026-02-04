@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selenium_Test_Execution_Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header .info { font-size: 14px; opacity: 0.9; }
+        .summary { display: flex; justify-content: space-around; padding: 30px; background: white; margin: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .stat { text-align: center; }
+        .stat .number { font-size: 36px; font-weight: bold; margin-bottom: 5px; }
+        .stat .label { color: #666; font-size: 14px; }
+        .pass { color: #10b981; }
+        .fail { color: #ef4444; }
+        .skip { color: #f59e0b; }
+        .tests { margin: 20px; }
+        .test { background: white; margin-bottom: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .test-header { padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .test-header:hover { background: #f9fafb; }
+        .test-name { font-size: 18px; font-weight: 600; }
+        .test-status { padding: 6px 16px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+        .status-pass { background: #d1fae5; color: #065f46; }
+        .status-fail { background: #fee2e2; color: #991b1b; }
+        .status-skip { background: #fef3c7; color: #92400e; }
+        .test-details { padding: 20px; background: #f9fafb; border-top: 1px solid #e5e7eb; display: none; }
+        .test-details.active { display: block; }
+        .test-description { color: #666; margin-bottom: 15px; font-style: italic; }
+        .test-time { color: #666; font-size: 13px; margin-bottom: 15px; }
+        .logs { margin-top: 15px; }
+        .log-entry { padding: 8px 12px; margin: 5px 0; border-radius: 4px; font-size: 13px; font-family: 'Courier New', monospace; }
+        .log-info { background: #dbeafe; color: #1e40af; }
+        .log-warning { background: #fef3c7; color: #92400e; }
+        .log-error { background: #fee2e2; color: #991b1b; }
+        .log-pass { background: #d1fae5; color: #065f46; }
+        .error-message { background: #fee2e2; color: #991b1b; padding: 15px; border-radius: 4px; margin: 15px 0; border-left: 4px solid #ef4444; }
+        .screenshots { margin-top: 15px; }
+        .screenshot { margin: 10px 0; }
+        .screenshot img { max-width: 100%; border: 1px solid #e5e7eb; border-radius: 4px; cursor: pointer; }
+        .screenshot-title { font-weight: 600; margin-bottom: 5px; color: #374151; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧪 Selenium_Test_Execution_Report</h1>
+        <div class="info">
+            <div>Start Time: 2026-01-18 20:31:08</div>
+            <div>End Time: 2026-01-18 20:31:56</div>
+            <div>Duration: 48.54 seconds</div>
+        </div>
+    </div>
+    
+    <div class="summary">
+        <div class="stat">
+            <div class="number">4</div>
+            <div class="label">Total Tests</div>
+        </div>
+        <div class="stat">
+            <div class="number pass">3</div>
+            <div class="label">Passed</div>
+        </div>
+        <div class="stat">
+            <div class="number fail">1</div>
+            <div class="label">Failed</div>
+        </div>
+        <div class="stat">
+            <div class="number skip">0</div>
+            <div class="label">Skipped</div>
+        </div>
+    </div>
+    
+    <div class="tests">
+
+        <div class="test">
+            <div class="test-header" onclick="toggleDetails(0)">
+                <div class="test-name">test_amazon_homepage_loads</div>
+                <span class="test-status status-pass">PASS</span>
+            </div>
+            <div class="test-details" id="details-0">
+                <div class="test-description">
+Test Case: Verify Amazon homepage loads successfully
+Priority: High
+Type: Smoke Test
+</div>
+                <div class="test-time">
+                    ⏱️ Duration: 6935ms | 
+                    Started: 20:31:10 | 
+                    Ended: 20:31:17
+                </div>
+                
+                
+                
+                <div class="logs">
+                    <strong>Test Logs:</strong>
+
+                    <div class="log-entry log-info">
+                        [20:31:10] INFO: Test started
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:10] INFO: Browser: Chrome
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:10] INFO: Navigating to Amazon homepage
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:10] INFO: URL loaded: https://www.amazon.com
+                    </div>
+
+                    <div class="log-entry log-pass">
+                        [20:31:17] PASS: Page title verified: Amazon.com. Spend less. Smile more.
+                    </div>
+
+                    <div class="log-entry log-pass">
+                        [20:31:17] PASS: Amazon logo is visible
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="test">
+            <div class="test-header" onclick="toggleDetails(1)">
+                <div class="test-name">test_search_functionality</div>
+                <span class="test-status status-pass">PASS</span>
+            </div>
+            <div class="test-details" id="details-1">
+                <div class="test-description">
+Test Case: Verify search functionality works correctly
+Priority: High
+Type: Regression Test
+</div>
+                <div class="test-time">
+                    ⏱️ Duration: 17581ms | 
+                    Started: 20:31:19 | 
+                    Ended: 20:31:36
+                </div>
+                
+                
+                
+                <div class="logs">
+                    <strong>Test Logs:</strong>
+
+                    <div class="log-entry log-info">
+                        [20:31:19] INFO: Test started
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:19] INFO: Browser: Chrome
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:19] INFO: Testing search functionality
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:23] INFO: Navigated to Amazon
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:29] INFO: Search box located
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:29] INFO: Search query entered: laptop
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:34] INFO: Search submitted
+                    </div>
+
+                    <div class="log-entry log-pass">
+                        [20:31:36] PASS: Search returned 22 results
+                    </div>
+
+                    <div class="log-entry log-pass">
+                        [20:31:36] PASS: Search term verified in results
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="test">
+            <div class="test-header" onclick="toggleDetails(2)">
+                <div class="test-name">test_navigation_menu</div>
+                <span class="test-status status-pass">PASS</span>
+            </div>
+            <div class="test-details" id="details-2">
+                <div class="test-description">
+Test Case: Verify navigation menu is present and clickable
+Priority: Medium
+Type: Regression Test
+</div>
+                <div class="test-time">
+                    ⏱️ Duration: 6771ms | 
+                    Started: 20:31:38 | 
+                    Ended: 20:31:45
+                </div>
+                
+                
+                
+                <div class="logs">
+                    <strong>Test Logs:</strong>
+
+                    <div class="log-entry log-info">
+                        [20:31:38] INFO: Test started
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:38] INFO: Browser: Chrome
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:38] INFO: Testing navigation menu
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:38] INFO: Navigated to Amazon
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:45] INFO: Navigation bar located
+                    </div>
+
+                    <div class="log-entry log-pass">
+                        [20:31:45] PASS: Menu button is visible and accessible
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="test">
+            <div class="test-header" onclick="toggleDetails(3)">
+                <div class="test-name">test_intentional_failure_demo</div>
+                <span class="test-status status-fail">FAIL</span>
+            </div>
+            <div class="test-details" id="details-3">
+                <div class="test-description">
+Test Case: Intentional failure to demonstrate screenshot capture
+Priority: Low
+Type: Demo Test
+</div>
+                <div class="test-time">
+                    ⏱️ Duration: 8540ms | 
+                    Started: 20:31:46 | 
+                    Ended: 20:31:55
+                </div>
+                
+                <div class="error-message"><strong>Error:</strong><br>Expected eBay in title (intentional failure)
+assert 'eBay' in 'Amazon.com. Spend less. Smile more.'
+ +  where 'Amazon.com. Spend less. Smile more.' = <selenium.webdriver.chrome.webdriver.WebDriver (session="fc8156e0a6b878b796ddd32d815e8849")>.title
+ +    where <selenium.webdriver.chrome.webdriver.WebDriver (session="fc8156e0a6b878b796ddd32d815e8849")> = <test_amazon.TestAmazonWebsite object at 0x1067fb100>.driver</div>
+                
+                <div class="logs">
+                    <strong>Test Logs:</strong>
+
+                    <div class="log-entry log-info">
+                        [20:31:46] INFO: Test started
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:46] INFO: Browser: Chrome
+                    </div>
+
+                    <div class="log-entry log-warning">
+                        [20:31:46] WARNING: This test will intentionally fail
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:48] INFO: Navigated to Amazon
+                    </div>
+
+                    <div class="log-entry log-info">
+                        [20:31:55] INFO: Page fully rendered
+                    </div>
+
+                    <div class="log-entry log-warning">
+                        [20:31:55] WARNING: Executing assertion that will fail
+                    </div>
+
+                    <div class="log-entry log-error">
+                        [20:31:55] ERROR: Assertion failed as expected
+                    </div>
+
+                    <div class="log-entry log-error">
+                        [20:31:56] ERROR: Screenshot captured: FAILED_test_intentional_failure_demo_20260118_203156.png
+                    </div>
+
+                </div>
+
+                <div class="screenshots">
+                    <strong>Screenshots:</strong>
+
+                    <div class="screenshot">
+                        <div class="screenshot-title">📸 FAILED_test_intentional_failure_demo_20260118_203156.png</div>
+                        <img src="../screenshots/FAILED_test_intentional_failure_demo_20260118_203156.png" alt="Screenshot" onclick="window.open(this.src)">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        function toggleDetails(idx) {
+            var details = document.getElementById('details-' + idx);
+            details.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
